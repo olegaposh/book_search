@@ -17,12 +17,15 @@ function Search () {
 
     }
 
+
+  
     const SearchSubmit = event => {
         
         event.preventDefault();
         // fetchBooks()
+        
         API.getBooks(search)
-          .then(res => setSearch(res.data))
+          .then(res => setBooks(res.data))
           .catch(err => console.log(err));
       };
     // useEffect(() => {
@@ -30,6 +33,7 @@ function Search () {
     //   fetchBooks()
     // }, [])
 
+   
     // const fetchBooks = async () => {
     //   // const proxyurl = "https://cors-anywhere.herokuapp.com/"
     //   // const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";

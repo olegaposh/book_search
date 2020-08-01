@@ -6,12 +6,10 @@ import "./SearchBar.css"
 const SearchBar = (props) => {
   
   return (
-    <MDBCol md="5">
-      <div className="input-group md-form form-sm form-1 pl-0">
-        <div className="input-group-prepend">
-          <span className="input-group-text purple lighten-3" id="basic-text1">
-            <MDBIcon className="text-white" icon="search" />
-          </span>
+    <MDBCol className="justify-content-center d-flex text-center" md="5">
+      <div className="input-group md-form form-sm form-1 pl-0 d-flex justify-content-center text-center">
+        <div className="input-group-prepend justify-content-center d-flex text-center">
+          
         </div>
         <input className="form-control my-0 py-1" 
                 type="text" 

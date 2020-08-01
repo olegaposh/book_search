@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image'
-import Table from 'react-bootstrap/Table'
+// import Image from 'react-bootstrap/Image'
+// import Table from 'react-bootstrap/Table'
 
 
 

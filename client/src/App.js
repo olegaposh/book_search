@@ -5,18 +5,19 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav/Nav";
 import Search from "./pages/Search"
-// import Header from "./components/Header/Header"
+import Header from "./components/Header/Header"
+// import favorites from "./pages/Saved"
 
 function App() {
   return (
     <Router>
       <div>
         <Nav />
-        {/* <Header /> */}
+        <Header />
         
         <Switch>
           <Route exact path = "/" component={Search} />
-          {/* <Route exact path = "/favorites" component={Saved} />  */}
+          {/* <Route exact path = "/" component={favorites} />  */}
           {/* <Route exact path = "/search" component={Search} /> */}
           {/* <Route exact path = "/books/:id" component={Detail} /> */}
           {/* <Route component={NoMatch} /> */}
