@@ -1,17 +1,22 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 
-
-function Header() {
-    return (
-        <>
-        <h1> Hello </h1>
-        <Jumbotron className="bg-primary text-white"> 
-            <h1 className="text-center font-weight-bold">Employee Directory</h1>
-        </Jumbotron>
-        </>
-    )
-
+const Header = () => {
+  return (
+    <MDBCol>
+      <MDBCard style={{ width: "22rem" }}>
+        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+        <MDBCardBody>
+          <MDBCardTitle>Card title</MDBCardTitle>
+          <MDBCardText>
+            Some quick example text to build on the card title and make
+            up the bulk of the card&apos;s content.
+          </MDBCardText>
+          <MDBBtn href="#">MDBBtn</MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCol>
+  )
 }
 
 export default Header;
