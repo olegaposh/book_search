@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav/Nav";
 import Search from "./pages/Search"
-import Header from "./components/Header/Header"
+// import Header from "./components/Header/Header"
 
 function App() {
   return (

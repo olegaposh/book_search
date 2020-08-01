@@ -20,24 +20,24 @@ function Search () {
     const SearchSubmit = event => {
         
         event.preventDefault();
-        fetchBooks()
-        // API.getBooks(search)
-        //   .then(res => setSearch(res.data))
-        //   .catch(err => console.log(err));
+        // fetchBooks()
+        API.getBooks(search)
+          .then(res => setSearch(res.data))
+          .catch(err => console.log(err));
       };
     // useEffect(() => {
 
     //   fetchBooks()
     // }, [])
 
-    const fetchBooks = async () => {
-      // const proxyurl = "https://cors-anywhere.herokuapp.com/"
-      // const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";
-      const URL = "https://www.googleapis.com/books/v1/volumes?q=";
-      let result = await axios.get(URL + search);
-      setBooks(result.data)
-      console.log(result.data);
-    }
+    // const fetchBooks = async () => {
+    //   // const proxyurl = "https://cors-anywhere.herokuapp.com/"
+    //   // const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";
+    //   const URL = "https://www.googleapis.com/books/v1/volumes?q=";
+    //   let result = await axios.get(URL + search);
+    //   setBooks(result.data)
+    //   console.log(result.data);
+    // }
     
 
       return (

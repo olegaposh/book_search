@@ -7,13 +7,36 @@ const db = require("../../models/book")
 //   const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";
 //   const URL = "https://www.googleapis.com/books/v1/volumes?q="
 //   axios
-//     .get(URL, { params: req.query }, KEY)
+    // .get(URL, { params: req.query })
 //     .then(({ data: { results } }) => res.json(results))
 //     .catch(err => res.status(422).json(err));
 // });
 
+router.get("/books"), async (req, res) => {
+  console.log("API is hitting")
+  // const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";
+  const URL = "https://www.googleapis.com/books/v1/volumes?q="
+
+
+  // axios.get(URL, {params: req.query })
+  //   .then(({data: {results } }) => res.json(results))
+  //   .catch(err => res.status(422).json(err))
+  
+  try {
+
+    const data = await axios.get(URL)
+
+    res.json(data);
+
+  } catch (error) {
+
+    console.log(error)
+    res.status(500).send(error)
+  }
+}
+
 // get all saved books
-router.get("/api/books", async (req, res) => {
+router.get("/savedbooks", async (req, res) => {
 
   try {
 
@@ -28,7 +51,7 @@ router.get("/api/books", async (req, res) => {
   }
 })
 // save new book to the database
-router.post("/api/books", async (req, res) => {
+router.post("/books", async (req, res) => {
 
   try {
 
@@ -43,7 +66,7 @@ router.post("/api/books", async (req, res) => {
   }
 })
 // delete book from database
-router.delete("/api/books/:id", async (req, res) => {
+router.delete("/books/:id", async (req, res) => {
 
   try {
 
