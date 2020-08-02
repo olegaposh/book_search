@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar/SearchBar"
 import ResultList from "../components/ResultList/ResultList"
 import API from "../utils/API"
-import axios from "axios";
+
 
 function Search () {
 
@@ -28,10 +28,12 @@ function Search () {
           .then(res => setBooks(res.data))
           .catch(err => console.log(err));
       };
-    // useEffect(() => {
+    useEffect(() => {
 
-    //   fetchBooks()
-    // }, [])
+      API.getBooks("harry potter")
+          .then(res => setBooks(res.data))
+          .catch(err => console.log(err));
+    }, [])
 
    
     // const fetchBooks = async () => {

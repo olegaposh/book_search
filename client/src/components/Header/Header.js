@@ -1,7 +1,7 @@
 import React from 'react';
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-const CardExample = () => {
+const Header = () => {
   return (
     
   //   <div class="jumbotron jumbotron-fluid text-center text-light bg-dark">
@@ -11,23 +11,16 @@ const CardExample = () => {
   //   </div>
   // </div>
 
- <MDBContainer className="mt-5 text-center">
+ <MDBContainer className="text-center">
 <MDBRow>
   <MDBCol>
-    <MDBJumbotron>
-      <h2 className="h1 display-3">Hello, world!</h2>
+    <MDBJumbotron className="bg-dark text-light">
+      <h2 className="h1 display-2">Google Book Search</h2>
+      <br></br>
       <p className="lead">
-        This is a simple hero unit, a simple Jumbotron-style component for
-        calling extra attention to featured content or information.
+        Search and save your favorite books.
       </p>
-      <hr className="my-2" />
-      <p>
-        It uses utility classes for typgraphy and spacing to space content out
-        within the larger container.
-      </p>
-      <p className="lead">
-        <MDBBtn color="primary">Learn More</MDBBtn>
-      </p>
+      
     </MDBJumbotron>
   </MDBCol>
 </MDBRow>
@@ -36,5 +29,5 @@ const CardExample = () => {
   )
 }
 
-export default CardExample;
+export default Header;
 
