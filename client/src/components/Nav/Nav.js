@@ -1,6 +1,7 @@
 import React from "react";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -9,19 +10,16 @@ function Nav() {
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-dark" href="#"><FontAwesomeIcon icon={faBook} size="3x" /></a>
+            <Link class="nav-link text-dark" to="/"><FontAwesomeIcon icon={faBook} size="3x" /></Link>
           </li>
-          
+
         </ul>
       </div>
-      
+
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Right</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Link</a>
+            <Link class="nav-link text-dark" to="/favorites">Favorites</Link>
           </li>
         </ul>
       </div>

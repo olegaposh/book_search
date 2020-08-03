@@ -24,27 +24,36 @@ function Search () {
         event.preventDefault();
         // fetchBooks()
         
-        API.getBooks(search)
+        API.searchBooks(search)
           .then(res => setBooks(res.data))
           .catch(err => console.log(err));
+          
       };
-    useEffect(() => {
 
-      API.getBooks("harry potter")
-          .then(res => setBooks(res.data))
-          .catch(err => console.log(err));
-    }, [])
+    // useEffect(() => {
 
-   
-    // const fetchBooks = async () => {
-    //   // const proxyurl = "https://cors-anywhere.herokuapp.com/"
-    //   // const KEY = "&key=AIzaSyBBDI72URfG1rPc9K9I78POLK_XGoh_nQ0";
-    //   const URL = "https://www.googleapis.com/books/v1/volumes?q=";
-    //   let result = await axios.get(URL + search);
-    //   setBooks(result.data)
-    //   console.log(result.data);
-    // }
+    //   API.searchBooks("harry potter")
+    //       .then(res => setBooks(res.data))
+    //       .catch(err => console.log(err));
+          
+    // }, [])
     
+    const handleButtonSave = (id) => {
+    const saveBook = books.items.filter((book) => book.id === id)[0].volumeInfo;
+    console.log("Hey you",saveBook)
+    API.saveBook({
+      title: saveBook.title,
+      author: saveBook.authors,
+      description: saveBook.description,
+      image: saveBook.imageLinks.thumbnail,
+        // ? saveBook.volumeInfo.imageLinks.thumbnail
+        // : "https://www.brdtex.com/wp-content/uploads/2019/09/no-image-480x480.png",
+      link: saveBook.infoLink
+    })
+      .then((book) => console.log("Successfullly save book", book), alert("Successfullt saved book"))
+      .catch((err) => console.log(err));
+      
+  };
 
       return (
         <>
@@ -53,6 +62,7 @@ function Search () {
         handleInputChange = {handleInputChange}
         search = {search}  />
         <ResultList
+        handleButtonSave={handleButtonSave}
         books = {books} />
         
         </>

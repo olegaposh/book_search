@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+// import "./Header.css"
 
 const Header = () => {
   return (
@@ -14,8 +15,8 @@ const Header = () => {
  <MDBContainer className="text-center">
 <MDBRow>
   <MDBCol>
-    <MDBJumbotron className="bg-dark text-light">
-      <h2 className="h1 display-2">Google Book Search</h2>
+    <MDBJumbotron className="Header bg-primary text-light">
+      <h2 className="h1 display-4">Google Book Search</h2>
       <br></br>
       <p className="lead">
         Search and save your favorite books.

@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Search from "./pages/Search"
 import Header from "./components/Header/Header"
-// import favorites from "./pages/Saved"
+import Saved from "./pages/Saved"
+
 
 function App() {
   return (
@@ -14,10 +15,9 @@ function App() {
       <div>
         <Nav />
         <Header />
-        
         <Switch>
-          <Route exact path = "/" component={Search} />
-          {/* <Route exact path = "/" component={favorites} />  */}
+          <Route exact path = "/" component={Saved} />
+          {/* <Route exact path = "/favorites" component={Saved} />  */}
           {/* <Route exact path = "/search" component={Search} /> */}
           {/* <Route exact path = "/books/:id" component={Detail} /> */}
           {/* <Route component={NoMatch} /> */}
