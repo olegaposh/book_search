@@ -15,7 +15,7 @@ const Header = () => {
  <MDBContainer className="text-center">
 <MDBRow>
   <MDBCol>
-    <MDBJumbotron className="Header bg-success text-light">
+    <MDBJumbotron className="Header bg-dark text-light">
       <h2 className="font-weight-bold h1 display-4">Google Book Search</h2>
       <br></br>
       <p className="lead">

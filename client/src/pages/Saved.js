@@ -16,7 +16,7 @@ function Books() {
   // Load all books and store them with setBooks
   useEffect(() => {
     loadBooks()
-  },)
+  }, [books])
 
   // Loads all books and sets them to books
   function loadBooks() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,8 @@ function Nav() {
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <Link class="nav-link text-dark" to="/favorites">Favorites</Link>
+            <Link class="nav-link text-dark" to="/favorites"><FontAwesomeIcon icon={faHeart} size="3x" /></Link>
+            <i class="far fa-heart"></i>
           </li>
         </ul>
       </div>
