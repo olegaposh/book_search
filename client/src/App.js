@@ -18,19 +18,7 @@ function App() {
         <Switch>
           <Route exact path = "/" component={Search} />
           <Route exact path = "/favorites" component={Saved} /> 
-          {/* <Route exact path = "/search" component={Search} /> */}
-          {/* <Route exact path = "/books/:id" component={Detail} /> */}
           {/* <Route component={NoMatch} /> */}
-          {/* //OR */}
-          {/* <Route exact path={["/", "/books"]}>
-            <Books />
-          </Route>
-          <Route exact path="/books/:id">
-            <Detail />
-          </Route>
-          <Route>
-            <NoMatch />
-          </Route> */}
         </Switch>
       </div>
     </Router>
