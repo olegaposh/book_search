@@ -32,6 +32,7 @@ function Books() {
     API.deleteBook(id)
       .then(res => loadBooks())
       .catch(err => console.log(err));
+      window.location.reload(false);
   }
 
   

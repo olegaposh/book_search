@@ -7,9 +7,8 @@ const ResultList = (props) => {
   return (
     <MDBContainer>
       {
-
-        props.books.items.map((book) => { 
-          return ( 
+        props.books.items.map((book) => {
+          return (
             <MDBRow key={book.id}>
               <MDBCol>
                 <div class="card mb-3 border border-dark">
@@ -22,13 +21,17 @@ const ResultList = (props) => {
                         <h5 class="card-title text-center">{book.volumeInfo.title}</h5>
                         <p class="card-text">{`${book.volumeInfo.description}`.substring(0, 300)}</p>
                         <p class="card-text"><small class="text-muted">{book.volumeInfo.authors}</small></p>
-                        <MDBBtn 
-                          className="button m-3 float-right" 
+                        <MDBBtn
+                          className="button m-3 float-right"
                           color="success"
                           id={book.id}
-                          onClick={() =>props.handleButtonSave(book.id)}
-                          >SAVE</MDBBtn>
-                        <MDBBtn className="button m-3 float-right" target="_blank" rel="noopener" href={book.volumeInfo.infoLink} color="info">VIEW</MDBBtn>
+                          onClick={() => props.handleButtonSave(book.id)}
+                        >SAVE</MDBBtn>
+                        <MDBBtn className="button m-3 float-right"
+                          target="_blank"
+                          rel="noopener"
+                          href={book.volumeInfo.infoLink}
+                          color="info">VIEW</MDBBtn>
                       </div>
                     </div>
                   </div>

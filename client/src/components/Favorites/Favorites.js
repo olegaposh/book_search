@@ -13,7 +13,7 @@ const Favorites = (props) => {
           return ( 
             <MDBRow key={book._id}>
               <MDBCol>
-                  
+
                 <div class="card mb-3 border border-dark">
                   <div class="row no-gutters">
                     <div class="col-md-3 p-4">
