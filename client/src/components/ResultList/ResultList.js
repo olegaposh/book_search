@@ -14,7 +14,9 @@ const ResultList = (props) => {
                 <div class="card mb-3 border border-dark">
                   <div class="row no-gutters">
                     <div class="col-md-3 p-4">
-                      <img alt={`${book.volumeInfo.title} book`} src={book.volumeInfo.imageLinks.thumbnail} />
+                      <img 
+                      alt={`${book.volumeInfo.title} book`} 
+                      src={book.volumeInfo.imageLinks.thumbnail} />
                     </div>
                     <div class="col-md-9">
                       <div class="card-body">

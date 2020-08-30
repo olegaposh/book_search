@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
-// import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import { Link } from "react-router-dom";
-// import { Col, Row, Container } from "../components/Grid";
-// import { List, ListItem } from "../components/List";
-// import { Input, TextArea, FormBtn } from "../components/Form";
 import Favorites from "../components/Favorites/Favorites"
 
 function Books() {
@@ -16,7 +10,7 @@ function Books() {
   // Load all books and store them with setBooks
   useEffect(() => {
     loadBooks()
-  }, [books])
+  },[books])
 
   // Loads all books and sets them to books
   function loadBooks() {
@@ -33,8 +27,6 @@ function Books() {
       .then(res => loadBooks())
       .catch(err => console.log(err));
   }
-
-  
 
     return (
       <Favorites 
