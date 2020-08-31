@@ -11,15 +11,12 @@
     
   - [Contributing](#contributing)
   
-  - [License](#license)
   
-Link:
-   
-[Click Here](https://book-search-react-2020.herokuapp.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](license)
 
-![Alt text](/Assets/book-search.png?raw=true "Title")
-![image info](/Assets/book-search.png)
-![alt text](book-search.png "Title")
+Link: [Click Here](https://book-search-react-2020.herokuapp.com)
+
+<img src="./client/public/assets/book-search.png">
   
 ## Description:
   
@@ -44,7 +41,3 @@ Allows the user to search for books and save them to their favorites.
   Alex Poshivailo
   
 
-## License:
-
-MIT License
-  

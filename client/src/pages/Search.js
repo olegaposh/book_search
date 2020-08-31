@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SearchBar from "../components/SearchBar/SearchBar"
 import ResultList from "../components/ResultList/ResultList"
 import API from "../utils/API"
@@ -30,13 +30,6 @@ function Search () {
           
       };
 
-    // useEffect(() => {
-
-    //   API.searchBooks("harry potter")
-    //       .then(res => setBooks(res.data))
-    //       .catch(err => console.log(err));
-          
-    // }, [])
     
     const handleButtonSave = (id) => {
     const saveBook = books.items.filter((book) => book.id === id)[0].volumeInfo;

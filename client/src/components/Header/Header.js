@@ -1,21 +1,14 @@
 import React from 'react';
 import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact";
-// import "./Header.css"
+
 
 const Header = () => {
   return (
     
-  //   <div class="jumbotron jumbotron-fluid text-center text-light bg-dark">
-  //   <div class="container">
-  //     <h1 class="display-4">Google Book Search</h1>
-  //     <p class="lead">Find and save all your favorite books.</p>
-  //   </div>
-  // </div>
-
  <MDBContainer className="text-center">
 <MDBRow>
   <MDBCol>
-    <MDBJumbotron className="Header bg-dark text-light">
+    <MDBJumbotron className="Header bg-success text-light">
       <h2 className="font-weight-bold h1 display-4">Google Book Search</h2>
       <br></br>
       <p className="lead">

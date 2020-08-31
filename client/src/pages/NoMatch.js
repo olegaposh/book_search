@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 const JumbotronPage = () => {
   return (
@@ -22,29 +22,3 @@ const JumbotronPage = () => {
 
 export default JumbotronPage;
 
-
-
-// import React from "react";
-// import { Col, Row, Container } from "mdbreact";
-// import Jumbotron from "mdbreact";
-
-// function NoMatch() {
-//   return (
-//     <Container fluid>
-//       <Row>
-//         <Col size="md-12">
-//           <Jumbotron>
-//             <h1>404 Page Not Found</h1>
-//             <h1>
-//               <span role="img" aria-label="Face With Rolling Eyes Emoji">
-//                 🙄
-//               </span>
-//             </h1>
-//           </Jumbotron>
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// }
-
-// export default NoMatch;
