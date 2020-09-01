@@ -16,8 +16,6 @@
 
 Link: [Click Here](https://book-search-react-2020.herokuapp.com)
 
-<img src="./client/public/Assets/book-search.png">
-
 ![](client/public/Assets/book-search.png)
   
 ## Description:
